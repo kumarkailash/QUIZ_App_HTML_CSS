@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style>
+
+ul {
+  list-style-type: none;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+  background-color:green;
+}
+
+@media screen and (min-width: 600px) {
+  ul{
+    font-size: 25px !important;
+  }
+} 
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+}
+
+#log{
+ display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color:green;
+  border: 2px solid white; 
+  border-radius: 5px;
+  line-height: 10px;
+  margin-top: 15px;
+  /* margin-left: 100%; */
+  /* float: left; */
+}
+#quizapp{
+  margin-top: 30px;
+  font-family: fantasy;
+  margin-left: 10px;
+
+}
+
+li a:hover {
+  background-color:white;
+  color:#396ed5;
+}
+#log:hover{
+    background-color:white;
+  color:#396ed5;
+}
+#li1{
+  float: right;
+}
+#li2{
+  float: right;
+}
+
+.notintrestBtn{
+  background-color: green;
+}
+  #nextBTN{
+      width: 150px;
+      background-color:green;
+      padding: 6px;
+      border-radius: 4px;
+      color: white;
+  }
+  h1{
+      color: white;
+      /* background-color: aqua; */
+  }
+h3{
+    font-size: 40px;
+}
+#quizapp{
+  color: white;
+  line-height: 10px;
+
+}
+
+.Qstnrnder1{
+  color: black;
+  
+}
+@media screen and (min-width: 600px) {
+  .Qstnrnder1{
+    font-size: 50px !important;
+  }
+} 
+
+.questions{
+  color: black;
+}
+@media screen and (min-width: 600px) {
+  .questions{
+    font-size: 50px !important;
+    transform: scale(1.8);
+  }
+} 
+#heading{
+  background-color: dodgerblue;
+  padding: 5px;
+  font-family: fantasy;
+}
+#li2{
+  background-color: yellow;
+}
+
+#link1{
+  text-decoration: none;
+  background-color: green;
+  color: white;
+}
+#nextBTN{
+  width: 15%;
+}
+@media screen and (min-width: 600px) {
+  #nextBTN{
+    font-size: 30px !important;
+    /* transform: scale(1.8); */
+  }
+} 
+body {
+        background-image: url("back.jpg");
+       
+      }
+      
+  </style>
+</head>
+<body>  
+    
+    
+    
+    
+<ul>
+        <!-- <li> <a class="active" href="index.html">Home</a> </li>
+        <li> <a href="createEvent.html">Create Events</a> </li>
+        <li> <a href="myEvent.html">My Events</a> </li> -->
+     <h2> <li id="quizapp">QUIZ APP</li></h2>
+        
+        <li id="li2"><a href="#" id="link1"></a></li>
+        <li id="li1"><input type="button" value="Logout" id="log" onclick="logOut()"></li>
+      </ul>
+      
+      
+      <div id="myUL">
+      
+          
+      </div>
+    
+    <center>
+
+
+    <div id="mainDiv"> <br>
+      <br>
+
+<h1 id="heading">Welcome to Quiz App</h1>
+
+<h3 id="headingQuestion">  </h3> <h3> <label id="question1" > </label> </h3>
+
+<table>
+
+
+
+  <tr><td> 
+    <input type="radio"  checked="checked" id="option1" name="r1"  class="questions" >  
+      <label   id="value1"  class="Qstnrnder1"  > </label> 
+    </td>
+     </tr>
+
+<tr> <td>
+  <input type="radio"  checked="checked"  id="option2" name="r1" class="questions"> 
+   <label  id="value2"  class="Qstnrnder1"  > </label> </td>
+</tr>
+  <tr>
+      <td>
+  <input type="radio"  checked="checked"   id="option3" name="r1" class="questions">
+    <label  id="value3"  class="Qstnrnder1"  > </label> </td>
+</tr>
+
+  <tr>
+  <input type="radio"  checked="checked"  id="option4"  name="r1" class="questions">  <label  id="value4"  class="Qstnrnder1"  > </label> </tr>
+
+</table>
+
+<!-- <input type="button" value="Send" onclick="send()"  class="btn btn-success btn1"> -->
+
+
+<input type="button"   class="btn btn-success btn1" value="Next" id="nextBTN" onclick=" nextQuestion()" >
+
+
+
+
+
+    </div>
+</center>
+</body>
+
+<script src="question.js"></script>
+</html>

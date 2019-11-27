@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        background-image: url("back.jpg");
+       
+      }
+
+      #addbutton {
+        width: 200px;
+        /* padding: 4px; */
+      background-color: green;
+      margin-left: 100px;
+      }
+     
+      #head{
+        width: 1400px;
+        padding: 6px;
+        text-align: center;
+        background-color: green;
+        color: white;
+        font-size: 40px;
+  }
+
+#maindiv{
+/* border: 1px solid red; */
+margin-left: 400px !important;
+margin-top: 20px;
+
+
+}
+@media screen and (max-width: 600px) {
+  #maindiv{
+    font-size: 50px !important;
+  }
+} 
+
+      
+      @media screen and (max-width: 600px) {
+  #head{
+    font-size: 40px !important;
+  }
+}    
+
+
+#question{
+font-size: 30px;
+width:70%;
+
+}
+
+@media screen and (min-width: 600px) {
+  #question{
+    font-size: 45px !important;
+    height: 50px;
+    /* color: white !important; */
+
+  }
+} 
+
+.op1{
+font-size: 30px;
+width:70%;
+
+}
+    
+@media screen and (min-width: 600px) {
+  .op1{
+    font-size: 45px !important;
+    height: 50px;
+
+  }
+} 
+
+
+
+#ans{
+font-size: 50px;
+width:70%;
+padding: 4px !important;
+
+}
+@media screen and (min-width: 300px) {
+  #ans{
+    font-size: 35px !important;
+    height: 50px;
+  }
+} 
+
+      h2 {
+        text-align: center;
+      }
+    .btn1{
+      width: 30%;
+      margin-left: 30px;
+    
+    }
+    @media screen and (min-width: 300px) {
+  .btn1{
+    font-size: 30px !important;
+    height: 60px;
+  }
+}
+
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <!-- <h2>QUIZ APP</h2> -->
+
+ <h1 id="head">Create Quiz App By Thar IT Students</h1>
+     <div id="maindiv">
+     <br>
+      <input type="text"     id="question" size="100px"  placeholder="Enter Question"/>   <br/> <br/>
+      <input type="text" class="op1" id="opt1" size="100px" placeholder="Enter Answer 1"/>       <br/> <br/>
+      <input type="text"  class="op1" id="opt2" size="100px" placeholder="Enter Answer 2"/>       <br/> <br/>
+      <input type="text"  class="op1" id="opt3" size="100px" placeholder="Enter Answer 3"/>       <br/> <br/>
+      <input type="text"  class="op1" id="opt4" size="100px" placeholder="Enter Answer 4"/>   <br/> <br/>
+      <input type="text" id="ans" size="100px" placeholder="Enter Corret Answer"/>   <br/> <br/>
+<!--  
+      <input type="button" style="font-size: 60px;" onclick="quzizbtn()" value="ADD" id="addbutton" />
+<button id="addbutton" style="font-size: 60px;"  onclick="send()">Send1</button> -->
+<input type="button" value="Add"  onclick="quzizbtn()" class="btn btn-success btn1"> 
+
+<input type="button" value="Send" onclick="send()" class="btn btn-success btn1"> 
+
+  
+  </body>
+  <script src="QuizApp.js"></script>
+</html>
